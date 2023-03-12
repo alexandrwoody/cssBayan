@@ -1,4 +1,4 @@
-/* Обнуление */
+
 *,
 *::before,
 *::after {
@@ -39,11 +39,7 @@ h6 {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    
-    
-
-
-
+       
 
 }
 
@@ -94,6 +90,7 @@ body {
 
 .mem-input:checked+.mem-img {
     display: block;
+    transition: 0.7s ease-in-out;
 }
 
 .mem {
@@ -101,24 +98,17 @@ body {
 }
 
 img {
-height: 35em;
-width: 35em;
+height: 30em;
+width: 30em;
 object-fit: contain;
 }
 .mem-tittle:before {
     content: '\276F';
     float: right;
 }
-.mem-input:checked + .mem-tittle:before {
-    transition: transform .35s;
-    transform: rotate(90deg);
-}
+
 .mem-input:hover+.mem-img {
     display: block;
-    
+   
 }
 
-.mem-img {
-   
-    
-}
